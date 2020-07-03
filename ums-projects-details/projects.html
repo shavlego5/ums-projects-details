@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>პროექტები</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/projects.css" />
+  </head>
+  <body>
+    <div class="projects_header">
+      <h2>
+        პროექტები
+      </h2>
+      <div id="switch_between_cards_tables">
+        <span id="scrollSwitch" class="switch"></span>
+        <button id="cards_button" onclick="toCards()">ქარდები</button>
+        <button id="tables_button" onclick="toTables()">ცხრილები</button>
+      </div>
+      <div class="home_to_projects">
+        <a href="#">მთავარი</a>
+        <p>/ პროექტები</p>
+      </div>
+    </div>
+
+
+    <div id="projects_container">
+        <div id="cards_container">
+            <div class="card">
+                <div class="project_name ddd">
+                  <p class="header">
+                    დასახელება:
+                  </p>
+                  <p class="text text_float_left">
+                    მცხეთის მუნიციპალიტეტში ნაფეტვრებიდან ქვემო წყლულეთამდე მისასვლელი
+                    გზის და ლისი-მუხაწყაროს ცენტრალური გზის რეაბილიტაცია
+                  </p>
+                </div>
+                <div class="project_location ddd">
+                  <p class="header">მდებარეობა:</p>
+                  <p class="text text_float_left">მცხეთა-მთიანეთი, მცხეთა</p>
+                </div>
+                <div class="project_type">
+                  <p class="header">ტიპი:</p>
+                  <p class="text text_float_left">გზები, მშენებლობა</p>
+                </div>
+                <div class="project_date">
+                  <p class="header">დაწყება/დასასრული:</p>
+                  <p class="text text_float_left">31.10.2018 - 31.10.2020</p>
+                </div>
+                <div class="project_programm">
+                  <p class="header">პროგრამა:</p>
+                  <p class="text text_float_left">
+                    WB
+                  </p>
+                </div>
+                <div class="project_donor">
+                  <p class="header">დონორი:</p>
+                  <p class="text text_float_left">RDP-III</p>
+                </div>
+                <div class="project_status">
+                  <p class="header">სტატუსი:</p>
+                  <p class="text status text_float_left">გაუქმებული</p>
+                </div>
+                <div class="project_footer">
+                  <p>დაემატა <span class="adding_date text">2 თვის წინ</span></p>
+                  <p class="project_details text"><span onclick="showDetails()">ვრცლად<i class="fas fa-arrow-right"></i></span></p>
+                </div>
+              </div>
+              <div class="card">
+                <div class="project_name ddd">
+                  <p class="header">
+                    დასახელება:
+                  </p>
+                  <p class="text text_float_left">
+                    მცხეთის მუნიციპალიტეტში ნაფეტვრებიდან ქვემო წყლულეთამდე მისასვლელი
+                    გზის და ლისი-მუხაწყაროს ცენტრალური გზის რეაბილიტაცია
+                  </p>
+                </div>
+                <div class="project_location ddd">
+                  <p class="header">მდებარეობა:</p>
+                  <p class="text text_float_left">მცხეთა-მთიანეთი, მცხეთა</p>
+                </div>
+                <div class="project_type">
+                  <p class="header">ტიპი:</p>
+                  <p class="text text_float_left">გზები, მშენებლობა</p>
+                </div>
+                <div class="project_date">
+                  <p class="header">დაწყება/დასასრული:</p>
+                  <p class="text text_float_left">31.10.2018 - 31.10.2020</p>
+                </div>
+                <div class="project_programm">
+                  <p class="header">პროგრამა:</p>
+                  <p class="text text_float_left">
+                    WB
+                  </p>
+                </div>
+                <div class="project_donor">
+                  <p class="header">დონორი:</p>
+                  <p class="text text_float_left">RDP-III</p>
+                </div>
+                <div class="project_status">
+                  <p class="header">სტატუსი:</p>
+                  <p class="text status text_float_left">დასრულებული</p>
+                </div>
+                <div class="project_footer">
+                  <p>დაემატა <span class="adding_date text">2 თვის წინ</span></p>
+                  <p class="project_details text"><span onclick="showDetails()">ვრცლად<i class="fas fa-arrow-right"></i></span></p>
+                </div>
+              </div>
+              <div class="card">
+                <div class="project_name ddd">
+                  <p class="header">
+                    დასახელება:
+                  </p>
+                  <p class="text text_float_left">
+                    მცხეთის მუნიციპალიტეტში ნაფეტვრებიდან ქვემო წყლულეთამდე მისასვლელი
+                    გზის და ლისი-მუხაწყაროს ცენტრალური გზის რეაბილიტაცია
+                  </p>
+                </div>
+                <div class="project_location ddd">
+                  <p class="header">მდებარეობა:</p>
+                  <p class="text text_float_left">მცხეთა-მთიანეთი, მცხეთა</p>
+                </div>
+                <div class="project_type">
+                  <p class="header">ტიპი:</p>
+                  <p class="text text_float_left">გზები, მშენებლობა</p>
+                </div>
+                <div class="project_date">
+                  <p class="header">დაწყება/დასასრული:</p>
+                  <p class="text text_float_left">31.10.2018 - 31.10.2020</p>
+                </div>
+                <div class="project_programm">
+                  <p class="header">პროგრამა:</p>
+                  <p class="text text_float_left">
+                    WB
+                  </p>
+                </div>
+                <div class="project_donor">
+                  <p class="header">დონორი:</p>
+                  <p class="text text_float_left">RDP-III</p>
+                </div>
+                <div class="project_status">
+                  <p class="header">სტატუსი:</p>
+                  <p class="text status text_float_left">გაუქმებული</p>
+                </div>
+                <div class="project_footer">
+                  <p>დაემატა <span class="adding_date text">2 თვის წინ</span></p>
+                  <p class="project_details text"><span onclick="showDetails()">ვრცლად<i class="fas fa-arrow-right"></i></span></p>
+                </div>
+              </div>
+              <div class="card">
+                <div class="project_name ddd">
+                  <p class="header">
+                    დასახელება:
+                  </p>
+                  <p class="text text_float_left">
+                    მცხეთის მუნიციპალიტეტში ნაფეტვრებიდან ქვემო წყლულეთამდე მისასვლელი
+                    გზის და ლისი-მუხაწყაროს ცენტრალური გზის რეაბილიტაცია
+                  </p>
+                </div>
+                <div class="project_location ddd">
+                  <p class="header">მდებარეობა:</p>
+                  <p class="text text_float_left">მცხეთა-მთიანეთი, მცხეთა</p>
+                </div>
+                <div class="project_type">
+                  <p class="header">ტიპი:</p>
+                  <p class="text text_float_left">გზები, მშენებლობა</p>
+                </div>
+                <div class="project_date">
+                  <p class="header">დაწყება/დასასრული:</p>
+                  <p class="text text_float_left">31.10.2018 - 31.10.2020</p>
+                </div>
+                <div class="project_programm">
+                  <p class="header">პროგრამა:</p>
+                  <p class="text text_float_left">
+                    WB
+                  </p>
+                </div>
+                <div class="project_donor">
+                  <p class="header">დონორი:</p>
+                  <p class="text text_float_left">RDP-III</p>
+                </div>
+                <div class="project_status">
+                  <p class="header">სტატუსი:</p>
+                  <p class="text status text_float_left">შეჩერებული</p>
+                </div>
+                <div class="project_footer">
+                  <p>დაემატა <span class="adding_date text">2 თვის წინ</span></p>
+                  <p class="project_details text"><span onclick="showDetails()">ვრცლად<i class="fas fa-arrow-right"></i></span></p>
+                </div>
+              </div>
+              <div class="card">
+                <div class="project_name ddd">
+                  <p class="header">
+                    დასახელება:
+                  </p>
+                  <p class="text text_float_left">
+                    მცხეთის მუნიციპალიტეტში ნაფეტვრებიდან ქვემო წყლულეთამდე მისასვლელი
+                    გზის და ლისი-მუხაწყაროს ცენტრალური გზის რეაბილიტაცია
+                  </p>
+                </div>
+                <div class="project_location ddd">
+                  <p class="header">მდებარეობა:</p>
+                  <p class="text text_float_left">მცხეთა-მთიანეთი, მცხეთა</p>
+                </div>
+                <div class="project_type">
+                  <p class="header">ტიპი:</p>
+                  <p class="text text_float_left">გზები, მშენებლობა</p>
+                </div>
+                <div class="project_date">
+                  <p class="header">დაწყება/დასასრული:</p>
+                  <p class="text text_float_left">31.10.2018 - 31.10.2020</p>
+                </div>
+                <div class="project_programm">
+                  <p class="header">პროგრამა:</p>
+                  <p class="text text_float_left">
+                    WB
+                  </p>
+                </div>
+                <div class="project_donor">
+                  <p class="header">დონორი:</p>
+                  <p class="text text_float_left">RDP-III</p>
+                </div>
+                <div class="project_status">
+                  <p class="header">სტატუსი:</p>
+                  <p class="text status text_float_left">დასრულებული</p>
+                </div>
+                <div class="project_footer">
+                  <p>დაემატა <span class="adding_date text">2 თვის წინ</span></p>
+                  <p class="project_details text"><span onclick="showDetails()">ვრცლად<i class="fas fa-arrow-right"></i></span></p>
+                </div>
+              </div>
+              <div class="card">
+                <div class="project_name ddd">
+                  <p class="header">
+                    დასახელება:
+                  </p>
+                  <p class="text text_float_left">
+                    მცხეთის მუნიციპალიტეტში ნაფეტვრებიდან ქვემო წყლულეთამდე მისასვლელი
+                    გზის და ლისი-მუხაწყაროს ცენტრალური გზის რეაბილიტაცია
+                  </p>
+                </div>
+                <div class="project_location ddd">
+                  <p class="header">მდებარეობა:</p>
+                  <p class="text text_float_left">მცხეთა-მთიანეთი, მცხეთა</p>
+                </div>
+                <div class="project_type">
+                  <p class="header">ტიპი:</p>
+                  <p class="text text_float_left">გზები, მშენებლობა</p>
+                </div>
+                <div class="project_date">
+                  <p class="header">დაწყება/დასასრული:</p>
+                  <p class="text text_float_left">31.10.2018 - 31.10.2020</p>
+                </div>
+                <div class="project_programm">
+                  <p class="header">პროგრამა:</p>
+                  <p class="text text_float_left">
+                    WB
+                  </p>
+                </div>
+                <div class="project_donor">
+                  <p class="header">დონორი:</p>
+                  <p class="text text_float_left">RDP-III</p>
+                </div>
+                <div class="project_status">
+                  <p class="header">სტატუსი:</p>
+                  <p class="text status text_float_left">მიმდინარე</p>
+                </div>
+                <div class="project_footer">
+                  <p>დაემატა <span class="adding_date text">2 თვის წინ</span></p>
+                  <p class="project_details text"><span onclick="showDetails()">ვრცლად<i class="fas fa-arrow-right"></i></span></p>
+                </div>
+              </div>
+        </div>
+    
+        <div id="table">
+            <table cellspacing="0">
+                <tbody>
+                    <tr>
+                        <th>დასახელება</th>
+                        <th>მდებარეობა</th>
+                        <th>ტიპი</th>
+                        <th>დაწყება/დასასრული</th>
+                        <th>პროგრამა</th>
+                        <th>დონორი</th>
+                        <th>სტატუსი</th>
+                        <th>დაემატა</th>
+                        <th></th>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div id="details_container">
+            <div class="details">
+                <div class="details_header">
+                    <h2 class="contractor">შპს "ჯეო გრუპი"</h2>
+                </div>
+
+                <div class="contractor_details">
+                    <h3>EIB/MIMP/W/NCB/87-2-2019</h3>
+                    <p>განცხადების ნომერი: <span> DEP190000075</span></p>
+                    <a href="">ტენდერის ბმული<i class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <div class="cost_date">
+                    <div class="price">
+                        <p class="details_header">ღირებულება</p>
+                        <div>
+                            <h3>საწყისი ღირებულება</h3>
+                        <p class="start_price">12 867 938</p>
+                        </div>
+                        <div>
+                            <h3>ცვლილება</h3>
+                        <p class="price_change">-867 938</p>
+                        </div>
+                        <div>
+                            <h3>საბოლოო ღირებულება</h3>
+                        <p class="price_result"></p>
+                        </div>
+                    </div>
+                    <div class="date">
+                        <p class="details_header">თარიღი</p>
+                        <div>
+                            <h3>დაიწყო</h3>
+                        <p class="start_date">12.10.2017</p>
+                        </div>
+                        <div>
+                            <h3>დასრულდა</h3>
+                        <p class="end_date">12.10.2020</p>
+                        </div>
+                        <div>
+                            <h3>კონტრაქტის ვადა</h3>
+                        <p class="contract_term">12.10.2019</p>
+                        </div>
+                        <div>
+                            <h3>ვადაგადაცილება</h3>
+                        <p class="contract_overdue"></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="actual_works_acceptance">
+                    <div class="actual_works">
+                        <p class="details_header">ფაქტიური სამუშაოები</p>
+                        <div>
+                            <h3>დაიწყო</h3>
+                        <p class="actual_works_start_date">10.05.2018</p>
+                        </div>
+                        <div>
+                            <h3>დასრულდა</h3>
+                        <p class="actual_works_end_date">10.01.2020</p>
+                        </div>
+                        <div>
+                          <h3>ხანგრძლივობა</h3>
+                      <p class="actual_works_duration"></p>
+                      </div>
+                    </div>
+                    <div class="acceptance">
+                        <p class="details_header">მიღება-ჩაბარება</p>
+                        <div>
+                            <h3>დაიწყო</h3>
+                        <p class="acceptance_start">8.01.2019</p>
+                        </div>
+                        <div>
+                            <h3>დასრულდა</h3>
+                        <p class="acceptance_end">10.01.2020</p>
+                        </div>
+                        <div>
+                          <h3>ხანგრძლივობა</h3>
+                      <p class="acceptance_duration"></p>
+                      </div>
+                    </div>
+                </div>
+                <div class="another_details">
+                    <p class="details_header">სხვა დეტალები</p>
+                    <div class="more_details">
+                        <div class="wrapper">
+                            <div>
+                                <h3>სახაზინო კოდი:</h3>
+                            <p class="acceptance_end">250305</p>
+                            </div>
+                            <div>
+                                <h3>შესრულება:</h3>
+                            <p class="acceptance_end">3 228 263</p>
+                            </div>
+                            <div>
+                                <h3>გადახდა:</h3>
+                            <p class="acceptance_end">3 228 263</p>
+                            </div>
+                            <div>
+                                <h3>ავანსი სულ:</h3>
+                            <p class="acceptance_end">3 228 263</p>
+                            </div>
+                        </div>
+                        <div class="wrapper">
+                            <div>
+                                <h3>დასაქვითი:</h3>
+                            <p class="acceptance_end">3 228 263</p>
+                            </div>
+                            <div>
+                                <h3>რეზერვი სულ:</h3>
+                            <p class="acceptance_end">3 228 263</p>
+                            </div>
+                            <div>
+                                <h3>გადასახდელი:</h3>
+                            <p class="acceptance_end">3 228 263</p>
+                            </div>
+                            <div>
+                                <h3>ჯარიმა:</h3>
+                            <p class="acceptance_end">20 000</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+    </div>
+
+    <script src="js/projects.js"></script>
+  </body>
+</html>

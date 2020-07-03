@@ -1,0 +1,247 @@
+body {
+    background-color: #eaeded;
+}
+
+.projects_header {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.home_to_projects {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+    align-items: baseline;
+    font-size: 18px;
+}
+
+.home_to_projects a {
+    text-decoration: none;
+    padding-right: 5px;
+    color: #85c1e9;
+}
+
+#switch_between_cards_tables {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #145a32;
+    border-radius: 32px;
+    width: 170px;
+    height: 36px;
+    padding-left: 15px;
+    padding-right: 15px;
+    position: relative;
+}
+
+#switch_between_cards_tables button {
+    position: relative;
+    z-index: 2;
+    border: none;
+    background: none;
+    outline: none;
+    cursor: pointer;
+}
+
+#switch_between_cards_tables button {
+    transition: 1s;
+}
+
+.switch {
+    position: absolute;
+    z-index: 1;
+    width: 100px;
+    height: 30px;
+    top: calc(50% - 15px);
+    left: 5px;
+    background-color: #212f3c;
+    border-radius: 36px;
+    transition: 0.5s;
+}
+
+#cards_button {
+    color: #ecf0f1;
+}
+
+#projects_container {
+    position: relative;
+    width: 95%;
+    height: 100%;
+    margin: auto;
+    transition: 0.5s;
+}
+
+#cards_container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-bottom: 30px;
+    transition: 0.5s;
+}
+
+.card {
+    min-width: 360px;
+    width: 32%;
+    background-color: white;
+    border-radius: 5px;
+    margin-top: 10px;
+    transition: 0.5s;
+}
+
+.card div:not(:last-child) {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    text-align: center;
+    margin: -10px;
+}
+
+.header {
+    width: 30%;
+    text-align: right;
+}
+
+.text_float_left {
+    width: 50%;
+    text-align: left;
+}
+
+.project_footer {
+    background-color: #d5dbdb;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    font-size: 15px;
+}
+
+.project_details span , td span {
+    color: #3498db;
+    cursor: pointer;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.project_details i {
+    padding-left: 3px;
+    line-height: 15px;
+}
+
+.status {
+    font-weight: bold;
+}
+
+#table {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: scale(0);
+    transition: 0.5s;
+    width: 100%;
+}
+
+th {
+    background-color: #5dade2;
+    padding: 5px;
+    color: #f7f9f9;
+}
+
+tbody:first-child {
+    border-radius: 8px;
+}
+
+tr:nth-child(odd) {
+    background-color: #aed6f1;
+}
+
+td {
+    padding: 5px;
+    text-align: center;
+}
+
+td a {
+    text-decoration: none;
+    color: #21618c;
+}
+
+#details_container {
+    position: absolute;
+    top: 2.5%;
+    left: 5%;
+    width: 90%;
+    transform: scale(0);
+    padding-bottom: 30px;
+    transition: 0.5s;
+}
+
+.details_header {
+    text-align: center;
+    background-color: #3498db;
+    color: #f7f9f9;
+    padding: 5px 0;
+}
+
+.contractor_details {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    flex-wrap: wrap;
+    width: 90%;
+    margin: auto;
+    border-bottom: 2px solid #cacfd2;
+}
+
+.contractor_details a {
+    text-decoration: none;
+    color: #3498db;
+}
+
+.contractor_details a i {
+    margin-left: 10px;
+}
+
+.contractor_details h3 {
+    color: #A93226;
+}
+
+.cost_date,
+.actual_works_acceptance {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.price,
+.date,
+.actual_works,
+.acceptance {
+    width: 45%;
+    min-width: 300px;
+}
+
+.price div,
+.date div,
+.actual_works div,
+.acceptance div,
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: baseline;
+    border-bottom: 1px solid #cacfd2;
+}
+
+.wrapper div {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.wrapper div h3 {
+    margin-right: 10px;
+}
